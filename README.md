@@ -2,7 +2,7 @@
 
 ## Rails如何使用
 
-  rake bootcat:install
+    rake bootcat:install
 
 ## 加载的Gem列表
 
@@ -38,5 +38,5 @@
     development:
       ckeditor:
         enable: true
-        path_prefix: '/ckeditor2'
+        path_prefix: '/ckeditor'
           
