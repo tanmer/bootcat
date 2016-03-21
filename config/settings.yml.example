@@ -1,0 +1,42 @@
+default: &default
+  site:
+    name: FM1617
+
+  admin_path: admin
+
+  account:
+    mailer_sender: sender@tanmer.com
+    fake_email_suffix: '@tanmer.fake'
+
+  openid:
+    wechat:
+      app_id: wx4fcc725f01538ec5
+      app_key: b6cce46130dc1ce49a5de740a9ccee13
+    qq:
+      app_id: 101295609
+      app_key: ab7f0db27ee4bda6ad97f75294c83cf4
+
+  qiniu: &qiniu_credentials
+    access_key: HXrvQOeDfAizpMzdanxSMiotX60zWuDXAseybFcx
+    secret_key: n886ogK5IGUwYx-M4m-NLSaP0-OTGD2_eCCsqId_
+
+  paperclip:
+    enable: true
+    options:
+      storage: :quniu
+      qiniu_credentials:
+        <<: *qiniu_credentials
+      bucket: tm-xxx
+      use_timestamp: false
+      qiniu_host: http://pic.wedxt.com
+
+  ckeditor:
+    enable: true
+    path_prefix: '/ckeditor'
+
+development:
+  <<: *default
+production:
+  <<: *default
+test:
+  <<: *default

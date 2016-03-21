@@ -19,6 +19,14 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 4.2", ">= 4.2.5.1"
   s.add_dependency "settingslogic", "~> 2.0", ">= 2.0.9"
+  s.add_dependency 'rqrcode_png', '~> 0.1.5'
+
+  s.add_dependency 'ckeditor', '~> 4.1.0'
+  s.add_dependency "paperclip", "~> 4.3.5"
+  s.add_dependency "paperclip-qiniu", "0.0.2"
+
+  s.add_dependency 'rails-i18n', '~> 4.0.8'
+  s.add_dependency 'i18n_yaml_generator', '0.0.1'
 
   s.add_development_dependency "sqlite3"
 end
