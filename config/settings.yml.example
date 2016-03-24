@@ -31,7 +31,6 @@ default: &default
       qiniu_host: http://pic.wedxt.com
 
   ckeditor:
-    enable: true
     path_prefix: '/ckeditor'
 
 development:

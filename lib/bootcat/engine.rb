@@ -3,5 +3,6 @@ module Bootcat
     # isolate_namespace Bootcat
     rake_tasks { load "tasks/bootcat_tasks.rake" }
     require 'ckeditor'
+    require 'paperclip'
   end
 end
