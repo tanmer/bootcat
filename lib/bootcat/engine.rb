@@ -4,5 +4,6 @@ module Bootcat
     rake_tasks { load "tasks/bootcat_tasks.rake" }
     require 'ckeditor'
     require 'paperclip'
+    require 'draper'
   end
 end
