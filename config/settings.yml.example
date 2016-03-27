@@ -23,7 +23,7 @@ default: &default
   paperclip:
     enable: true
     options:
-      storage: :quniu
+      storage: :qiniu
       qiniu_credentials:
         <<: *qiniu_credentials
       bucket: tm-xxx

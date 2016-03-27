@@ -1,3 +1,3 @@
 if Settings['paperclip'] && Settings.paperclip['enable']
-  Rails.application.config.paperclip_defaults = Settings.paperclip['options'] || {}
+  Paperclip::Attachment.default_options.update((Settings.paperclip['options'] || {}).deep_symbolize_keys)
 end
