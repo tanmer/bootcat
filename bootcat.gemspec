@@ -24,9 +24,6 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'ckeditor', '~> 4.1.0'
   s.add_dependency "paperclip-qiniu", "0.2.0"
-
-  s.add_dependency 'draper', '~> 2.1.0'
-
   s.add_dependency 'draper', '~> 2.1.0'
 
   s.add_dependency 'rails-i18n', '~> 4.0.8'
