@@ -6,5 +6,7 @@ module Bootcat
     require 'paperclip'
     require 'paperclip-qiniu'
     require 'draper'
+    require 'redis'
+    require 'redis-namespace'
   end
 end

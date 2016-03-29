@@ -8,6 +8,20 @@ default: &default
     mailer_sender: sender@tanmer.com
     fake_email_suffix: '@tanmer.fake'
 
+    weixin:
+      app_id: wx4fcc725f01538ec5
+      app_secret: b6cce46130dc1ce49a5de740a9ccee13
+      token_string: 50c2263e7f076bbe75c50ebd54401963 # 微信Token值
+      secret_string: 0abcf2c591b0a1b209ca12a20a8eda83 # 微信服务URL配置中，此值用来避免真正使用的Token值暴露在URL上，提高安全性。
+      encoding_aes_key: 
+      mount_path: '/account'
+
+  redis:
+    namespace: ns # 独立命名空间Gem redis-namespace用到
+    connection: # 支持https://github.com/redis/redis-rb的所有连接方式，Redis.new(connection)
+      host: 127.0.0.1
+      port: 6379
+
   openid:
     wechat:
       app_id: wx4fcc725f01538ec5
