@@ -1,3 +1,7 @@
+if Settings['ckeditor'] && Settings.ckeditor['enable']
+  Rails.application.config.assets.precompile += %w( ckeditor/* )
+end
+
 # Use this hook to configure ckeditor
 Ckeditor.setup do |config|
   # ==> ORM configuration
@@ -34,7 +38,7 @@ Ckeditor.setup do |config|
 
   # To reduce the asset precompilation time, you can limit plugins and/or languages to those you need:
   # By default: nil (no limit)
-  # config.assets_languages = ['en', 'uk']
+  config.assets_languages = ['zh-cn']
   # config.assets_plugins = ['image', 'smiley']
 
   # CKEditor CDN
