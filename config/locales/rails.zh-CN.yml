@@ -1,0 +1,9 @@
+---
+zh-CN:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: '验证失败: %{errors}'
+        restrict_dependent_destroy:
+          has_one: 由于 %{record} 需要此记录，所以无法移除记录
+          has_many: 由于 %{record} 需要此记录，所以无法移除记录
