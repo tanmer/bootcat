@@ -9,6 +9,7 @@ module Bootcat
     require 'paperclip-qiniu'
     require 'draper'
     require 'redis'
-    require 'redis-namespace'
+    require 'kaminari'
+    require 'kaminari-i18n'
   end
 end

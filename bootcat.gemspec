@@ -33,6 +33,8 @@ Gem::Specification.new do |s|
   s.add_dependency 'i18n_yaml_generator', '0.0.1'
 
   s.add_dependency 'browser', '~> 1.0.1'
+  s.add_dependency 'kaminari', '~> 0.16.3'
+  s.add_dependency 'kaminari-i18n', '~> 0.4.0'
 
   s.add_development_dependency "sqlite3"
 end

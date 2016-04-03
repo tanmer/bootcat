@@ -2,7 +2,7 @@ default: &default
   site:
     name: FM1617
 
-  admin_path: admin
+  admin_path: '/admin'
 
   account:
     mailer_sender: sender@tanmer.com
@@ -16,11 +16,10 @@ default: &default
       encoding_aes_key: 
       mount_path: '/account'
 
-  redis:
-    namespace: ns # 独立命名空间Gem redis-namespace用到
-    connection: # 支持https://github.com/redis/redis-rb的所有连接方式，Redis.new(connection)
-      host: 127.0.0.1
-      port: 6379
+  redis: # 支持https://github.com/redis/redis-rb的所有连接方式，Redis.new(connection)
+    host: 127.0.0.1
+    port: 6379
+    namespace: book118-dev
 
   openid:
     wechat:
