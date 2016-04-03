@@ -32,5 +32,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'rails-i18n', '~> 4.0.8'
   s.add_dependency 'i18n_yaml_generator', '0.0.1'
 
+  s.add_dependency 'browser', '~> 1.0.1'
+
   s.add_development_dependency "sqlite3"
 end
