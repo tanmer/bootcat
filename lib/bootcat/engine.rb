@@ -11,5 +11,6 @@ module Bootcat
     require 'redis'
     require 'kaminari'
     require 'kaminari-i18n'
+    require 'font-awesome-rails'
   end
 end
