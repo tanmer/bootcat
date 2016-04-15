@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'i18n_yaml_generator', github: 'xiaohui-zhangxh/i18n-yaml-generator'
+
 # Declare your gem's dependencies in bootcat.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
 # development dependencies will be added by default to the :development group.
