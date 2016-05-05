@@ -1,5 +1,9 @@
 # Bootcat(启动猫)
 
+快速创建项目：
+
+rails new my_app --template http://gitlab.tanmer.com/tm-framework/bootcat/raw/master/boot_template.rb
+
 ## Rails如何使用
 
     rake bootcat:install
